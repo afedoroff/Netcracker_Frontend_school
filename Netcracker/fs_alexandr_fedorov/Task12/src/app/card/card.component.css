@@ -1,0 +1,43 @@
+.card{
+  justify-content: space-between;
+  padding: .5rem 1rem;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  border-radius: 32px;
+  background-color: #f8df5f;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+.title{
+  padding-right: 12px;
+}
+
+.img{
+  height: 64px;
+  width: 64px;
+  margin-right: 20px;
+}
+
+.cat{
+  background: url("../../assets/cat.svg") no-repeat;
+}
+
+.rabbit{
+  background-image: url("../../assets/rabbit.svg");
+}
+
+.dog{
+  background-image: url("../../assets/dog.svg");
+}
+
+.parrot{
+  background-image: url("../../assets/parrot.svg");
+}
+
+.raccoon{
+  background-image: url("../../assets/raccoon.svg");
+}

@@ -1,0 +1,8 @@
+c1 = new Cinema('Мягкий кинотеатр', 'Мегасити')
+c1.addMovie({'Мстители', 'Джо Руссо'})
+c1.addMovie(new Movie('Мстители 2', 'Джо Руссо'))
+c1.removeMovie('Мстители')
+c1.movieList[1].addGenre(new Genre('боевик'))
+c1.movieList[1].addGenre(new Genre('ужас'))
+c1.movieList[1].genreList[2].name = 'фантастика'
+c1.contacts.phone = '79297140422'

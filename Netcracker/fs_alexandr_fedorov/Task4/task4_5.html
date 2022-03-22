@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        while (true){
+            let word = prompt('Напишите слово...');
+            let str = word.split('').reverse().join('');
+            if (word === str){
+                alert(`${word} палиндром!`)
+            } else alert(`${word} не палиндром!`)
+        }
+    </script>
+</body>
+</html>

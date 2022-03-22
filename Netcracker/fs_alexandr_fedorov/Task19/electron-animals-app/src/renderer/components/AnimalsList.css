@@ -1,0 +1,29 @@
+:root {
+  --green: #36e975;
+  --greenHover: #06c565;
+}
+
+.list {
+  max-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.list__btn {
+  border: none;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 32px;
+  font-weight: 700;
+  font-size: 18px;
+  background: var(--green);
+  transition: .2s ease background-color;
+}
+
+.list__btn:hover{
+  background-color: var(--greenHover);
+  cursor: pointer;
+}

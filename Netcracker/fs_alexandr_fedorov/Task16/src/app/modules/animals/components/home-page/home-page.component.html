@@ -1,0 +1,31 @@
+<div class="wrapper">
+  <div class="container">
+    <app-add-form (newAnimalEvent)="newAnimalEvent($event)"></app-add-form>
+  </div>
+  <div class="container">
+    <app-animal-card *ngFor="let card of animalsItems$ | async; trackBy: getId" [hidden]="hideCats && card.type == 'Cat'"
+                     [animal]="card" (clickedAnimal)="setAnimal($event)"
+    >
+    </app-animal-card>
+    <button (click)="hideCatsEvent()" [ngClass]="{show:hideCats}" class="btn">
+      {{hideCats ? "Show Cats" : "Hide Cats"}}
+    </button>
+  </div>
+  <div class="container" [hidden]="!animalClicked">
+    <div class="card">
+      <p>Name: {{animal.name}}</p>
+      <p>Age: {{animal.age}}</p>
+      <p>Sex: {{animal.sex}}</p>
+      <p>Description: {{animal.description}}</p>
+    </div>
+    <div class="crud">
+      <button class="crud-btn edit" [routerLink]="['pet', animal.id]">
+        Edit
+      </button>
+      <button class="crud-btn delete" (click)="deleteAnimal()">
+        Delete
+      </button>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

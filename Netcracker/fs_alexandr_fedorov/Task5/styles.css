@@ -1,0 +1,84 @@
+@import url('http://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+body{
+    background-color: #0D0D2B;
+    user-select: none;
+    font-family: "Rubik";
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    background-color: #FAFBFF;
+    padding: 25px;
+    border-radius: 32px;
+    max-width: 360px;
+    height: 650px;
+    margin: 150px auto;
+    box-shadow: 15px 15px 50px rgba(150, 150, 150, .50);
+}
+
+.item{
+    background-color: #F8F8F8;
+    border-radius: 100%;
+    box-shadow: 7px 5px 10px rgba(0, 0, 0, .15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    cursor: pointer;
+    color: #666666;
+    transition: .2s ease color;
+    border: none;
+}
+
+.item sup {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.operation{
+    color: #3671E9;
+}
+
+.item:hover{
+    color: #bb91df;
+}
+
+.item:active{
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, .15);
+}
+
+form{
+    max-width: 100%;
+}
+
+input{
+    width: 100%;
+    height: 100px;
+    border: none;
+    font-size: 4vw;
+    outline: none;
+    text-align: right;
+    color: #444444;
+    padding: 0;
+    background-color: #FAFBFF;
+}
+
+#text-view{
+    font-size: 64px;
+    text-overflow: ellipsis;
+}
+
+#text-view-history{
+    height: 50px;
+    font-size: 24px;
+}
+
+.input{
+    grid-column: 1/-1;
+    border-radius: 0;
+    background-color: #FAFBFF;
+    box-shadow: none;
+}

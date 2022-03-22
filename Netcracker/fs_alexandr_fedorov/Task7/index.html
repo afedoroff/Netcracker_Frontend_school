@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1><img src="electronic.svg" alt="logo">Electronics</h1>
+</header>
+<div class="wrapper">
+    <form>
+        <input type="number" placeholder="Code">
+        <input type="text" placeholder="Product">
+        <input type="text" placeholder="Production">
+        <input type="number" placeholder="Price">
+    </form>
+</div>
+<div class="wrapper">
+    <button id="add">ADD</button>
+    <button id="edit" class="disabled" disabled>EDIT</button>
+    <button id="delete" class="disabled" disabled>DELETE</button>
+</div>
+<div class="wrapper">
+    <table class="table">
+        <thead style="pointer-events: none">
+        <tr>
+            <th>Code</th>
+            <th>Product</th>
+            <th>Production</th>
+            <th>Price, $</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

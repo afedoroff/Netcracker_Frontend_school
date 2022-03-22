@@ -1,0 +1,83 @@
+@green: #48e936;
+@red: #c50606;
+
+.wrapper{
+  display: flex;
+  padding-top: 3rem;
+}
+
+.container{
+  width: 33%;
+}
+
+.form{
+}
+
+.card{
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 32px;
+  background-color: #30cefd;
+  max-height: 150px;
+  width: 255px;
+}
+
+.logo{
+  height: 50px;
+  width: 50px;
+}
+
+h1{
+  text-align: center;
+}
+
+.crud{
+  width: 220px;
+  margin: 10px auto;
+}
+
+.edit{
+  background-color: yellow;
+}
+
+.delete{
+  background-color: red;
+  color: white;
+  margin-left: 10px;
+}
+
+.crud-btn{
+  border: none;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 32px;
+  width: 100px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.btn{
+  border: none;
+  color: white;
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 32px;
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 40%;
+
+  .btn-mixin(@green, @red)
+}
+.show{
+  .btn-mixin(@red, @green)
+}
+
+.btn-mixin(@bg, @bgSec){
+  background: @bg;
+  transition: .2s ease background-color;
+  &:hover{
+    background-color: @bgSec;
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="input">
+            <form class="form">
+                <input type="text" name="display" id="text-view" readonly>
+                <input type="text" name="display" id="text-view-history" readonly>
+            </form>
+        </div>
+        <button class="item operation" onclick="clearAll()">C</button>
+        <button class="item operation" onclick="clearInput()">CE</button>
+        <button class="item operation" onclick="Operations.degreeOperation('sqrt')">√</button>
+        <button class="item operation" onclick="Operations.degreeOperation('sqr')">x<sup>2</sup></button>
+
+        <button class="item number" onclick="writeNum('7')">7</button>
+        <button class="item number" onclick="writeNum('8')">8</button>
+        <button class="item number" onclick="writeNum('9')">9</button>
+        <button class="item operation" onclick="Operations.simpleOperation('/')">&divide;</button>
+
+        <button class="item number" onclick="writeNum('4')">4</button>
+        <button class="item number" onclick="writeNum('5')">5</button>
+        <button class="item number" onclick="writeNum('6')">6</button>
+        <button class="item operation" onclick="Operations.simpleOperation('*')">&times;</button>
+
+        <button class="item number" onclick="writeNum('1')">1</button>
+        <button class="item number" onclick="writeNum('2')">2</button>
+        <button class="item number" onclick="writeNum('3')">3</button>
+        <button class="item operation" onclick="Operations.simpleOperation('-')">-</button>
+
+        <button class="item" onclick="writeNum('0')">0</button>
+        <button class="item" onclick="writeNum('.')">.</button>
+        <button class="item" onclick="equal()">=</button>
+        <button class="item operation" onclick="Operations.simpleOperation('+')">+</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="oop.js"></script>
+</body>
+</html>

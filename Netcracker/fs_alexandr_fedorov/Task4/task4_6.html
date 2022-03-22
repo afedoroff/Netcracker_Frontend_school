@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/Task3/styles.css">
+</head>
+<body>
+    <div style="display: flex; margin: 200px auto 0; max-width: 500px">
+        <button onclick="guessTheNumber()" class="calculator-header__btn" style="margin: 0 auto">
+            Начать игру!
+        </button>
+    </div>
+    <div style="margin: 50px auto; max-width: 500px">
+        <p>
+            При нажатии на кнопку система генерирует случайное число от 1 до 1000, которое Вы должны угадать,
+            открывается диалоговое окно для ввода числа с подписью "Введите число".
+            <ul style="padding: 0">
+                <li style="margin-top: 12px">
+                    Если введенное число меньше, чем задуманное, появится сообщение "Искомое число больше!"
+                </li>
+                <li style="margin-top: 12px">
+                    Если введенное число больше, чем задуманное, появится сообщение "Искомое число меньше!"
+                </li>
+                <li style="margin-top: 12px">
+                    Если введено не число или вообще ничего не введено, запросить повторный ввод с надписью "Введите число!"
+                </li>
+                <li>
+                    Если число введено верно, появится сообщение "Вы угадали! Количество попыток: «количество попыток»".
+                </li>
+            </ul>
+        </p>
+    </div>
+    <script>
+        function guessTheNumber(){
+            let count = 0;
+            let num;
+            let randNum = Math.floor((Math.random() * 1000) + 1);
+            while (true){
+                num = parseInt(prompt("Введите число"));
+                count++;
+                while (isNaN(num)){
+                    num = parseInt(prompt("Введите число!"));
+                }
+                if(num === randNum){
+                    if(confirm(`Вы угадали! Количество попыток: ${count}`)){
+                        guessTheNumber();
+                    } else return;
+                } else if (num > randNum){
+                    alert("Искомое число меньше!");
+                } else {
+                    alert("Искомое число больше!");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

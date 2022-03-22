@@ -1,0 +1,92 @@
+{
+  "animals": [
+    {
+      "name": "Mitch",
+      "type": "Dog",
+      "description": "Funny",
+      "age": "2021-10-20",
+      "sex": "boy",
+      "id": 41865
+    },
+    {
+      "name": "Александр",
+      "type": "Cat",
+      "description": "hfg",
+      "age": "2021-10-09",
+      "sex": "boy",
+      "id": 52492
+    },
+    {
+      "name": "Александр",
+      "type": "Parrot",
+      "description": "dsd",
+      "age": "2021-11-13",
+      "sex": "boy",
+      "id": 26141
+    },
+    {
+      "name": "Александр",
+      "type": "Parrot",
+      "description": "dsd",
+      "age": "2021-11-13",
+      "sex": "boy",
+      "id": 34821
+    },
+    {
+      "name": "Александр",
+      "type": "Parrot",
+      "description": "dsd",
+      "age": "2021-11-13",
+      "sex": "boy",
+      "id": 36321
+    },
+    {
+      "name": "Александр",
+      "type": "Parrot",
+      "description": "dsd",
+      "age": "2021-11-13",
+      "sex": "boy",
+      "id": 2528
+    },
+    {
+      "name": "Александр",
+      "type": "Parrot",
+      "description": "dsd",
+      "age": "2021-11-13",
+      "sex": "boy",
+      "id": 82297
+    },
+    {
+      "name": "Александр",
+      "type": "Parrot",
+      "description": "dsd",
+      "age": "2021-11-13",
+      "sex": "boy",
+      "id": 23871
+    },
+    {
+      "name": "Александр",
+      "type": "Parrot",
+      "description": "dsd",
+      "age": "2021-11-13",
+      "sex": "boy",
+      "id": 41948
+    },
+    {
+      "name": "Александр",
+      "type": "Parrot",
+      "description": "dsd",
+      "age": "2021-11-13",
+      "sex": "boy",
+      "id": 9078
+    },
+    {
+      "name": "Александр",
+      "type": "Parrot",
+      "description": "dsd",
+      "age": "2021-11-13",
+      "sex": "boy",
+      "id": 1798
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+import * as obj0 from './script0'
+import * as obj1 from './script1'
+import * as obj2 from './script2'
+import * as obj3 from './script3'
+import * as obj4 from './script4'
+import * as obj5 from './script5'
+import * as obj6 from './script6'

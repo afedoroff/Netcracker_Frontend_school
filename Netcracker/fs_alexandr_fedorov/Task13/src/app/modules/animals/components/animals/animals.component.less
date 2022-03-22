@@ -1,0 +1,49 @@
+@green: #48e936;
+@red: #c50606;
+
+.wrapper{
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 3rem;
+  &__btn{
+    border: none;
+    color: white;
+    text-decoration: none;
+    padding: 20px 30px;
+    border-radius: 32px;
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 30%;
+    .btn-mixin(@green, @red, 'Hide Cats')
+  }
+}
+
+.card{
+  justify-content: space-between;
+  padding: .5rem 1rem;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  border-radius: 32px;
+  background-color: #30cefd;
+  max-height: 150px;
+}
+
+h1{
+  text-align: center;
+}
+
+.show{
+  .btn-mixin(@red, @green, 'Show Cats')
+}
+
+.btn-mixin(@bg, @bgSec, @content){
+  background: @bg;
+  transition: .2s ease background-color;
+  &:after{
+    content: @content;
+  }
+  &:hover{
+    background-color: @bgSec;
+  }
+}

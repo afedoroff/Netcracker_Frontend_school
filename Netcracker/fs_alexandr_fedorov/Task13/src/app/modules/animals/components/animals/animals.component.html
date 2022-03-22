@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <div>
+    <app-animal-card *ngFor="let card of cards" [hidden]="hideCats && card.type == 'Cat'"
+                     [animal]="card" (clickedAnimal)="setAnimal($event)"
+    >
+    </app-animal-card>
+    <button (click)="hideCatsEvent()" [ngClass]="{show:hideCats}" class="wrapper__btn"></button>
+  </div>
+  <div class="wrapper desc">
+    <div class="card">
+      <p>Name: {{animal.name}}</p>
+      <p>Age: {{animal.age}}</p>
+      <p>Sex: {{animal.sex}}</p>
+      <p>Description: {{animal.description}}</p>
+    </div>
+  </div>
+</div>

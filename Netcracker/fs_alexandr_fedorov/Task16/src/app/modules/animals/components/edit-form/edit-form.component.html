@@ -1,0 +1,35 @@
+<div class="wrapper">
+  <form class="form" [formGroup]="formGroup">
+    <div class="form__group">
+      <label>Name:</label>
+      <input class="form__input" [name]="controlNames.name" required
+             placeholder="Pet's name" [formControlName]="controlNames.name">
+    </div>
+    <div class="form__group">
+      <label>Type:</label>
+      <select class="form__input" [name]="controlNames.type" [(ngModel)]="animal.type" required
+              [formControlName]="controlNames.type">
+        <option *ngFor="let type of types">{{type}}</option>
+      </select>
+    </div>
+    <div class="form__group">
+      <label>Description:</label>
+      <input class="form__input" [name]="controlNames.desc" [formControlName]="controlNames.desc">
+    </div>
+    <div class="form__group">
+      <label>Birth Day:</label>
+      <input type="date" class="form__input" [name]="controlNames.age" required
+             [formControlName]="controlNames.age">
+    </div>
+    <div class="form__group">
+      <label>Sex:</label>
+      <select class="form__input" [name]="controlNames.sex" [(ngModel)]="animal.sex" required
+              [formControlName]="controlNames.sex">
+        <option>boy</option>
+        <option>girl</option>
+      </select>
+    </div>
+    <button (click)="submitForm()" [routerLink]="['']" type="submit" class="btn" [ngClass]="{valid: !isValid()}"
+            [disabled]="!isValid()">Submit</button>
+  </form>
+</div>

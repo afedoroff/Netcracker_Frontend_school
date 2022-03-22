@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    margin: 0 auto;
+    padding: 4px;
+    text-align: center;
+    background-color: #f7f9fb;
+}
+
+img{
+    max-width: 52px;
+    max-height: 52px;
+    margin-right: 5px;
+}
+
+.wrapper{
+    display: flex;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+input{
+    font-size: 24px;
+    border-radius: 8px;
+    border: 2px solid #828282;
+    outline: none;
+}
+
+input:focus{
+    border-radius: 8px;
+    border-color: #3671E9;
+}
+
+
+h1{
+    font-size: 56px;
+    color: #0a97ba;
+    margin: 0;
+}
+
+button{
+    border-radius: 10px;
+    border: 2px solid;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 auto;
+    color: white;
+}
+
+.disabled{
+    background-color: #828282!important;
+    color: white!important;
+}
+
+.invalid{
+    border-color: red;
+    background: url(error.svg) no-repeat 97%;
+    background-size: auto 80%;
+}
+
+.selected{
+    background-color: #a0fc6c;
+}
+
+#add{
+    background-color: #7da6fc;
+    border-color: #1f4188;
+}
+
+#edit{
+    background-color: #fafa67;
+    border-color: #cca005;
+    color: black;
+}
+
+#delete{
+    background-color: #fa4d4d;
+    border-color: #830101;
+}
+
+table {
+    font-size: 14px;
+    border-radius: 10px;
+    border-spacing: 0;
+    text-align: center;
+    width: 600px;
+}
+
+thead{
+    pointer-events: none;
+}
+
+th {
+    background: #BCEBDD;
+    color: white;
+    text-shadow: 0 1px 1px #2D2020;
+    padding: 10px 20px;
+}
+th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+th:first-child, td:first-child {
+    text-align: center;
+}
+th:first-child {
+    border-top-left-radius: 10px;
+}
+th:last-child {
+    border-top-right-radius: 10px;
+    border-right: none;
+}
+tr{
+    background: #F8E391;
+}
+td {
+    padding: 10px 20px;
+}
+
+tr td:last-child {
+    border-right: none;
+}
+
+form{
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+/*remove arrows in type = number*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /*Chrome*/
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}

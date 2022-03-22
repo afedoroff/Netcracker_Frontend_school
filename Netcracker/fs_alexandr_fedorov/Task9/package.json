@@ -1,0 +1,19 @@
+{
+  "name": "task9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mainWP.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.2",
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0"
+  }
+}

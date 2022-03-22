@@ -1,0 +1,32 @@
+<div class="wrapper">
+  <form class="form" (ngSubmit)="onSumited()" #animalForm="ngForm">
+    <div class="form__group">
+      <label>Name:</label>
+      <!--Без minlength и с одним символом валидно-->
+      <input class="form__input" name="name" [(ngModel)]="animal.name" required minlength="3"
+             placeholder="Pet's name">
+    </div>
+    <div class="form__group">
+      <label>Type:</label>
+      <select class="form__input" name="type" [(ngModel)]="animal.type" required>
+        <option *ngFor="let type of types" [ngValue]="type">{{type}}</option>
+      </select>
+    </div>
+    <div class="form__group">
+      <label>Description:</label>
+      <input class="form__input" name="description" [(ngModel)]="animal.description">
+    </div>
+    <div class="form__group">
+      <label>Birth Day:</label>
+      <input type="date" class="form__input" name="age" [(ngModel)]="animal.age" required>
+    </div>
+    <div class="form__group">
+      <label>Sex:</label>
+      <select class="form__input" name="sex" [(ngModel)]="animal.sex" required>
+        <option>boy</option>
+        <option>girl</option>
+      </select>
+    </div>
+    <button type="submit" class="btn" [disabled]="!animalForm.form.valid">Submit</button>
+  </form>
+</div>

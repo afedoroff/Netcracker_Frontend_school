@@ -1,0 +1,30 @@
+.wrapper{
+    text-align: center;
+}
+.card{
+    width: 300px;
+    border-radius: 24px;
+    padding: 10px;
+    text-align: left;
+    margin: 10px auto;
+}
+
+.block{
+    margin: 0 auto;
+}
+.block__link {
+    border: none;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 32px;
+    font-weight: 700;
+    font-size: 18px;
+    background: var(--green);
+    transition: .2s ease background-color;
+}
+
+.link:hover{
+    background-color: var(--greenHover);
+    cursor: pointer;
+}

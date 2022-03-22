@@ -1,0 +1,4 @@
+let c = new CinemaCreator()
+let c1 = c.factoryMethod(Cinema)
+c1.addMovie(new Movie('Мстители 2', 'Джо Руссо'))
+c1.removeMovie('Мстители 2')

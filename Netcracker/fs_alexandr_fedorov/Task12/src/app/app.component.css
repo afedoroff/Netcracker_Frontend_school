@@ -1,0 +1,53 @@
+.wrapper{
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  padding-left: 30%;
+}
+
+.logo{
+  height: 50px;
+  width: 50px;
+}
+
+h1{
+  text-align: center;
+}
+
+
+.btn{
+  border: none;
+  color: white;
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 32px;
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 40%;
+
+
+  background: #48e936;
+  transition: .2s ease background-color;
+}
+.btn:after{
+  content: 'Hide Cats';
+}
+.btn:hover{
+  background-color: #c50606;
+}
+
+.show{
+  background: #c50606;
+  transition: .2s ease background-color;
+}
+.show:after{
+  content: 'Show Cats';
+}
+.show:hover{
+  background-color: #48e936;
+}

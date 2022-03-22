@@ -1,0 +1,20 @@
+{
+  "animals": [
+    {
+      "name": "Mitch",
+      "type": "Dog",
+      "description": "Funny",
+      "age": "2021-10-20",
+      "sex": "boy",
+      "id": 41865
+    },
+    {
+      "name": "Александр",
+      "type": "Cat",
+      "description": "hfg",
+      "age": "2021-10-09",
+      "sex": "boy",
+      "id": 52492
+    }
+  ]
+}

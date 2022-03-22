@@ -1,0 +1,8 @@
+version: "3"
+services:
+  nginx-container:
+    build: ./nginx-1.20.1
+    image: nginx-image
+    container_name: nginx-container
+    ports:
+      - "81:80"

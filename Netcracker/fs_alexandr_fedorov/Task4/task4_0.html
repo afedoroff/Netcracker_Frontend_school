@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = 5;
+        let b = 4;
+        let c;
+
+        console.log(`a = ${a}`);
+        console.log(`b = ${b}`);
+        console.log("--------");
+
+        c = b;
+        b = a;
+        a = c;
+
+        console.log(`a = ${a}`);
+        console.log(`b = ${b}`);
+        console.log("--------");
+
+        a += b;
+        b = a - b;
+        a = a - b;
+
+        console.log(`a = ${a}`);
+        console.log(`b = ${b}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,571 @@
+@import url('http://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root{
+    --blue: #3671E9;
+    --dark-purple: #0D0D2B;
+    --purple: #2B076E;
+    --light-gray: #E0E0E0;
+    --gray: #BDBDBD;
+    --almost-white: #F8F9F8;
+    --dark-gray: #828282;
+    --white-gray: #FBFCFE;
+    --gray-rgb: 242, 242, 242;
+    --white-rgb: 255, 255, 255;
+    --black-rgb: 0, 0, 0;
+    --dark-purple-rgb: 43, 7, 110;
+}
+
+body{
+    margin: 0;
+}
+
+.image-content{
+    flex-grow: 1;
+}
+
+section{
+    margin: 0;
+    max-width: 100%;
+}
+
+
+.page-purple__image{
+    margin-top: 210px;
+}
+
+.image{
+    width: 100%;
+}
+
+body{
+    background-color: var(--dark-purple);
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+/*Text*/
+.nav-item{
+    margin-left: 32px;
+}
+
+.footer__nav-item{
+    padding-top: 14px;
+}
+
+.nav-item-login{
+    margin-left: 56px;
+    border-right: 1px solid rgba(var(--gray-rgb), .3);
+    padding-right: 24px;
+    font-weight: 500;
+}
+
+.nav-item-register{
+    margin-left: 24px;
+}
+
+.text-content__sale{
+    background-color: rgba(var(--white-rgb) .1);
+    display: inline-block;
+    padding: 8px 8px 8px 4px;
+    border-radius: 32px;
+    min-width: 365px;
+}
+
+.text-content__sale span{
+    background-color: white;
+    color: black;
+    padding: 4px 16px;
+    border-radius: 32px;
+    margin-right: 16px;
+    font-weight: 500;
+}
+
+.text-content__title1{
+    font-size: 64px;
+    font-weight: 700;
+    margin: 24px 0 24px;
+}
+
+.text-content__title2{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 24px;
+}
+
+.text-content__description{
+    color: var(--light-gray);
+    margin-bottom: 56px;
+    max-width: 410px;
+    margin-top: 0;
+}
+
+#text-content2{
+    max-width: 500px;
+    margin-left: 70px;
+}
+
+.calculator-header__input{
+    flex: 0 0 430px;
+    font-size: 20px;
+    color: var(--dark-purple);
+    border: none;
+    border-bottom: 1px solid var(--light-gray);
+    background-color: var(--white-gray);
+}
+
+.form-letter__input{
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-bottom: 2px solid rgba(var(--white-rgb), .4);
+    background-color: var(--blue);
+    width: 95%;
+    margin: 10px 40px 10px 0;
+}
+
+#message{
+    border: 2px solid rgba(var(--white-rgb), .4);
+}
+
+input:focus { outline: 0; }
+
+textarea{
+    max-width: 95%;
+    outline : none;
+    resize : none;
+    overflow : auto;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, .5);
+}
+
+.calculator-header__select{
+    flex: 0 0 200px;
+    font-size: 20px;
+    color: var(--dark-purple);
+    border: none;
+    border-bottom: 1px solid var(--light-gray);
+    background-color: var(--white-gray);
+    appearance: none;
+    background-image: url("/Task3/img/icons/arrow-select.svg");
+    background-repeat: no-repeat;
+    background-position: 98% 1px;
+}
+
+.calculator-footer__title{
+    color: var(--blue);
+    font-weight: 500;
+}
+
+.calculator-footer__total{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.calculator-footer__total span{
+    color: var(--blue);
+}
+
+.calculator-footer__description{
+    color: var(--dark-gray);
+    margin-bottom: 0;
+}
+
+#page-purple__text-content3{
+    padding: 200px 0 0 100px;
+}
+
+.crypto-item__desc{
+    font-size: 13px;
+    color: var(--dark-gray);
+    transition: .2s ease color;
+}
+
+.crypto-item:hover .crypto-item__desc{
+    color: white;
+}
+
+.crypto-item__title{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.crypto-item__title sup{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--gray);
+}
+
+.nav-title{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.payment__title{
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+
+/*Links*/
+.nav-link{
+    color: white;
+    text-decoration: none;
+    transition: .2s ease color;
+}
+
+.nav-link-register{
+    padding: 14px 32px;
+    background-color: var(--blue);
+    border-radius: 32px;
+    font-weight: 500;
+    transition: .2s ease background-color;
+}
+
+.text-content__link{
+    color: white;
+    text-decoration: none;
+    padding: 20px 30px;
+    background-color: var(--blue);
+    border-radius: 32px;
+    font-weight: 500;
+    transition: .2s ease background-color;
+}
+
+.text-content__link-dark{
+    color: white;
+    text-decoration: none;
+    padding: 20px 30px;
+    background-color: var(--blue);
+    border-radius: 32px;
+    font-weight: 500;
+    transition: .2s ease background-color;
+}
+
+.crypto-item__link{
+    background-image: url("img/icons/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: white;
+    width: 64px;
+    height: 64px;
+    display: block;
+    border-radius: 100%;
+    border: 2px solid rgba(var(--dark-purple-rgb), .2);;
+    background-repeat: no-repeat;
+    margin: 32px auto 0;
+}
+
+/*Links animation*/
+.nav-link:hover{
+    color: var(--blue);
+}
+
+.nav-link-register:hover{
+    color: white;
+    background-color: var(--purple);
+}
+
+.text-content__link:hover{
+    color: white;
+    background-color: var(--purple);
+}
+
+.text-content__link-dark:hover{
+    color: white;
+    background-color: var(--dark-purple);
+}
+
+/*Buttons*/
+.calculator-header__btn{
+    flex: 0 0 146px;
+    color: white;
+    text-decoration: none;
+    padding: 20px 0;
+    background-color: var(--blue);
+    border-radius: 32px;
+    font-weight: 500;
+    font-size: 18px;
+    transition: .2s ease background-color;
+    border: none;
+}
+
+.form-letter__btn{
+    color: black;
+    text-decoration: none;
+    padding: 15px 32px;
+    background-color: white;
+    border-radius: 32px;
+    font-weight: 500;
+    font-size: 18px;
+    width: 146px;
+    margin-top: 50px;
+    transition: .2s ease background-color, .2s ease color;
+    border: none;
+}
+
+.form-letter__btn:hover{
+    background-color: var(--purple);
+    color: white;
+}
+
+.calculator-header__btn:hover{
+    background-color: var(--purple);
+}
+
+#footer__logo{
+    padding-bottom: 172px;
+    margin-right: 134px;
+}
+
+/*Blocks*/
+.header{
+    max-width: 1202px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-footer{
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
+.wrapper{
+    max-width: 1202px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+}
+
+#products{
+    margin-top: 72px;
+}
+
+.text-content{
+    width: 600px;
+}
+
+.statistics{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+.statistics-item{
+    display: flex;
+    align-items: center;
+}
+
+.statistics-item__text{
+    color: var(--light-gray);
+}
+
+.statistics-item__text span{
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.statistics-item__icon{
+    background-color: rgba(var(--white-rgb), .1);
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#statistics-item__icon1{
+    background-image: url("/Task3/img/icons/icon1.svg");
+}
+
+#statistics-item__icon2{
+    background-image: url("/Task3/img/icons/icon2.svg");
+}
+
+#statistics-item__icon3{
+    background-image: url("/Task3/img/icons/icon3.svg");
+}
+
+#content-why-crappo{
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+#text-content3{
+    text-align: center;
+    margin: 200px auto 100px;
+}
+
+#text-content4{
+    text-align: center;
+    margin: 114px auto;
+    max-width: 760px;
+}
+
+#text-content__description3{
+    text-align: center;
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 630px;
+}
+
+#form__description{
+    margin-bottom: 0;
+}
+
+.calculator-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white-gray);
+    border-radius: 16px 16px 0 0;
+    max-width: 942px;
+    margin: 0 auto;
+    padding: 46px 46px;
+}
+
+.page-light{
+    background-color: var(--almost-white);
+    color: black;
+    padding-bottom: 100px;
+}
+
+.calculator-footer{
+    max-width: 942px;
+    padding: 46px 46px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 25px 120px rgba(var(--black-rgb), .15);
+}
+
+.page-purple{
+    margin-top: 0;
+    background-color: var(--purple);
+    padding: 100px 0 100px;
+}
+
+.page-purple__block{
+    padding-top: 120px;
+    max-height: 427px;
+}
+
+#page-purple__last{
+    margin-top: 120px;
+}
+
+#text-content5{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.crypto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.crypto-item{
+    background-color: white;
+    color: black;
+    max-width: 222px;
+    border-radius: 16px;
+    padding: 48px 48px;
+    box-shadow: 0 25px 120px rgba(var(--black-rgb), .15);
+    transition: .2s ease background-color, .2s ease color;
+}
+
+.crypto-item:hover{
+    background-color: var(--purple);
+    color: white;
+}
+
+.gradient{
+    padding: 88px 0 88px;
+    background: linear-gradient(180deg, var(--purple) 0%, var(--dark-purple) 100%);
+}
+
+.form{
+    background-color: var(--blue);
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 48px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.form__text{
+    max-width: 348px;
+}
+
+.form__letter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 0 566px
+}
+
+.footer__nav-block{
+    margin-left: 35px;
+    width: 200px;
+}
+
+footer{
+    padding-top: 48px;
+}
+
+#payment{
+    width: 350px;
+    margin-left: 120px;
+}
+
+.payment__img{
+    margin: 32px 16px 0 0;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 130px;
+}
+
+.social-links{
+    display: flex;
+    width: 248px;
+    justify-content: space-between;
+}
+
+
+.required:after{
+    color: red;
+    content: " *";
+    font-weight: 500;
+}

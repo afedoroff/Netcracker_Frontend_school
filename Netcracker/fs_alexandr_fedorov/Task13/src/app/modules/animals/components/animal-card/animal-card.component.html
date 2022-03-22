@@ -1,0 +1,14 @@
+<div (click)="clickEvent()" class="card flex">
+  <div>
+    <div class="flex">
+      <h1 class="card__title">{{animal.name}} | {{animal.type}}</h1>
+    </div>
+    <!--<div *ngIf="click">
+      <p>Age: {{animal.age}}</p>
+      <p>Sex: {{animal.sex}}</p>
+      <p>Description: {{animal.description}}</p>
+    </div>-->
+  </div>
+  <div [ngClass]="animal.type.toLowerCase()" class="card__img"></div>
+</div>
+

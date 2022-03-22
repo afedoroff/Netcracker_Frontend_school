@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <header>
+    <img src="../assets/kitty.svg" class="logo" alt="logo">
+    <h1>Cute Animals :3</h1>
+  </header>
+  <app-card *ngFor="let card of cards" [hidden]="hideCats && card.type == 'Cat'"
+            [animal]="card"
+  ></app-card>
+  <button (click)="hideCatsEvent()" [ngClass]="{show:hideCats}" class="btn"></button>
+</div>
